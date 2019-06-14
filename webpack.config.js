@@ -8,7 +8,7 @@ module.exports = {
   mode: MODE,
   entry: {
     main: "./src/js/main.js",
-    sub: "./src/js/sub.js"
+    contact: "./src/js/contact.js"
   },
   output: {
     filename: `${fileName}.js`,
@@ -89,9 +89,9 @@ module.exports = {
       template: 'src/main.html'
     }),
     new HtmlWebpackPlugin({
-      chunks: ['sub'],
-      filename: "sub.html",
-      template: 'src/sub.html'
+      chunks: ['contact'],
+      filename: "contact.html",
+      template: 'src/contact.html'
     }),
     new CleanWebpackPlugin(),
   ],
